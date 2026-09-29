@@ -1,9 +1,10 @@
-
+\hypertarget{sec:planteamiento}{}%
 \begin{center}
     {\Large\bfseries 1. PLANTEAMIENTO DEL PROBLEMA}
 \end{center}
 \vspace{1em}
 
+\hypertarget{sec:antecedentes}{}%
 \noindent{\large\bfseries 1.1 ANTECEDENTES}\par\vspace{0.5em}
 
 El uso del análisis cuantitativo aplicado a la toma de decisiones en el deporte profesional se originó con la sabermetría implementada por los Oakland Athletics en la Major League Baseball (MLB) durante la temporada 2002 [1]. Con un presupuesto de 44 millones de dólares, equivalente a un tercio del capital de franquicias como los New York Yankees (125 millones de dólares), la institución sustituyó los criterios de observación tradicional por modelos estadísticos para clasificar y seleccionar jugadores en todas las posiciones, logrando clasificar a los playoffs en 2002 y 2003 [1]. 
@@ -32,22 +33,30 @@ Esta falta de literatura consolidada sobre las métricas de selección expone a 
 
 Estos elementos (la evolución del análisis cuantitativo para la conformación de plantillas, la masificación de datos en las grandes ligas y la escasa literatura documentada sobre las métricas reales empleadas por los clubes ingleses) describen el contexto del problema, pero no permiten, por sí solos, establecer qué métricas avanzadas específicas y qué ponderaciones contextuales utilizan o deberían utilizar los clubes de la Premier League para la evaluación y fichaje de sus futbolistas en la temporada 2025/2026 (y, de manera particular, en roles de alto impacto como los atacantes): para eso hace falta un análisis directo sobre los datos de dicha temporada que permita caracterizar sistemáticamente estos criterios de selección. Los datos históricos y reportes citados documentan la situación que motivó esta propuesta; no sustituyen el estudio empírico planeado, el cual se ejecutará sobre el registro de datos de la temporada 2025/2026.
 
+\vspace{1em}
 
+\hypertarget{sec:descripcion}{}%
+\noindent{\large\bfseries 1.2 DESCRIPCIÓN DE LA SITUACIÓN PROBLEMÁTICA}\par
+Como se documentó en los antecedentes (numeral 1.1), el uso de la analítica de datos en el fútbol europeo ha crecido aceleradamente, pero la toma de decisiones sobre la selección y fichaje de atacantes sigue dominada por métricas tradicionales reduccionistas o por la descontextualización de indicadores avanzados ($xG$, $xA$). Actualmente no existe, en la literatura accesible ni en la práctica de clubes de menor presupuesto, evidencia o un marco metodológico estandarizado que permita determinar con rigor qué métricas abiertas y qué ponderaciones tácticas contextuales diferencian objetivamente a un atacante en la Premier League durante la temporada 2025/2026: la revisión exploratoria inicial reveló que, en 12 de 15 informes analizados, las evaluaciones ignoraban el modelo de juego del equipo de origen y se limitaban al conteo bruto de goles o a muestras pequeñas de partidos [9]. Esta ausencia de herramientas accesibles afecta directamente la planificación deportiva de las instituciones con recursos limitados, obligando a que las decisiones de inversión en contrataciones y la promoción de talentos se tomen por intuición, bajo la influencia de agentes o basadas en apreciaciones subjetivas [10].
 
 \vspace{1em}
-\noindent{\large\bfseries 1.2 DESCRIPCIÓN DE LA SITUACIÓN PROBLEMÁTICA}\par
-Como se documentó en los antecedentes (numeral 1.1), el uso de la analítica de datos en el fútbol europeo ha crecido aceleradamente, pero la toma de decisiones sobre la selección y fichaje de atacantes sigue dominada por métricas tradicionales reduccionistas o por la descontextualización de indicadores avanzados ($xG$, $xA$). Actualmente no existe, en la literatura accesible ni en la práctica de clubes de menor presupuesto, evidencia o un marco metodológico estandarizado que permita determinar con rigor qué métricas abiertas y qué ponderaciones tácticas contextuales diferencian objetivamente   a un atacante en la Premier League durante la temporada 2025/2026: la revisión exploratoria inicial reveló que, en 12 de 15 informes analizados, las evaluaciones ignoraban el modelo de juego del equipo de origen y se limitaban al conteo bruto de goles o a muestras pequeñas de partidos [9]. Esta ausencia de herramientas accesibles afecta directamente la planificación deportiva de las instituciones con recursos limitados, obligando a que las decisiones de inversión en contrataciones y la promoción de talentos se tomen por intuición, bajo la influencia de agentes o basadas en apreciaciones subjetivas [10].
 
+\hypertarget{sec:formulacion}{}%
 \noindent{\large\bfseries 1.3 FORMULACIÓN DEL PROBLEMA}\par
 A partir del planteamiento anterior, la pregunta de investigación que orienta este estudio es: ¿de qué manera el análisis e integración de métricas avanzadas de rendimiento accesible permite caracterizar y diferenciar perfiles de atacantes de forma consistente en la Premier League durante la temporada 2025/2026, en comparación con las evaluaciones basadas en métricas tradicionales?
 
 Esta pregunta se delimita a la temporada 2025/2026 de la Premier League, a futbolistas de perfil ofensivo (atacantes: delanteros centros, extremos e interiores de ataque), y al uso de datos cuantitativos de eventos de acceso abierto o bajo costo. Se sistematiza en las siguientes sub-preguntas: (a) ¿cuáles métricas avanzadas accesibles presentan mayor capacidad de diferenciación en la efectividad y contribución táctica de los atacantes evaluados?; (b) ¿cómo altera el contexto colectivo del equipo (como el porcentaje de posesión y volumen de generación) la ponderación de dichos indicadores avanzados?; y (c) ¿existen diferencias en la caracterización funcional entre atacantes con registros tradicionales (goles y asistencias) similares que deban ajustarse mediante este modelo?
 
+\vspace{1em}
+
+\hypertarget{sec:consecuencias}{}%
 \noindent{\large\bfseries 1.4 CONSECUENCIAS DE NO INVESTIGAR}\par
 Si esta situación persiste, es probable que las instituciones de recursos limitados y los analistas independientes sigan evaluando y contratando futbolistas de perfil ofensivo sin criterio metodológico explícito, con dos riesgos simultáneos que impactan la sostenibilidad del club: asumir contrataciones a sobreprecio de jugadores cuyo rendimiento decae al cambiar de sistema táctico (comprometiendo el capital en salarios de alto costo) o descartar talentos accesibles y efectivos por no figurar en conteos brutos tradicionales. Cada ventana de transferencias que transcurre sin un marco metodológico abierto y contextualizado es, previsiblemente, un periodo más de política de fichajes basada en intuición, especulación comercial y sesgos de evaluación.
 
+\vspace{1em}
+
+\hypertarget{sec:delimitacion}{}%
 \noindent{\large\bfseries 1.5 DELIMITACIÓN}\par
 Este estudio se delimita a la caracterización y diferenciación de perfiles de atacantes mediante métricas avanzadas accesibles y su contexto colectivo —no al desarrollo de una plataforma de software comercial ni a modelos de aprendizaje automático predictivos de lesiones—, en futbolistas con minutos jugados en la Premier League durante la temporada 2025/2026, utilizando datos cuantitativos de eventos de acceso público o bajo costo. La ejecución y análisis se realizan sobre el registro de datos de la temporada 2025/2026, no sobre periodos o ligas anteriores.
 
 Queda fuera del alcance el seguimiento biométrico y de posicionamiento en tiempo real (optical tracking data de alto costo) —filtrado por no ser viable de adquirir o procesar sin infraestructura de élite—, así como el análisis de posiciones defensivas o de portería, la predicción de valor económico de mercado en dinero, el impacto de factores psicológicos individuales y la evaluación de competencias fuera del contexto inglés.
-
